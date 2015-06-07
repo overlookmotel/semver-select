@@ -14,7 +14,7 @@ API is stable. All features tested and working.
 
 ## What's it for
 
-A few useful tool for when you need to select a function or other variable based on a [semver](https://www.npmjs.com/package/semver) version.
+A few useful tools for when you need to select a function or other variable based on a [semver](https://www.npmjs.com/package/semver) version.
 
 For example, if you are writing an app which interacts with an API which needs a different calling signature depending on it's version, you can use this to choose a function that implements the right interface for that API version.
 
@@ -22,9 +22,9 @@ For example, if you are writing an app which interacts with an API which needs a
 
 ### `semverSelect(version, choices)`
 
-Takes a list of choices as an object with the semver version for each choice as the object's attributes.
+Takes a list of choices as an object with semver match strings as the object's attributes.
 
-Loops through the object's attributes and returns the first matching result.
+Loops through `choice`'s attributes and returns the first matching result.
 Returns `undefined` if no match found.
 
 ```js
@@ -46,18 +46,6 @@ semverSelect('4.0.0', fns)(); // returns 'other'
 Takes an object and maps the values of attributes to the semver-chosen choice.
 
 ```js
-var obj = {
-	monkey: {
-		'^1.0.0': 'v1',
-        '1.0.0 - 2.x.x': 'v2',
-        '*': 'other'
-	},
-	dinosaur: {
-		'^1.0.0': 'ver1',
-		'^2.0.0': 'ver2'
-	}
-};
-
 semverSelect('2.3.8', {
 	monkey: {
 		'^1.0.0': 'v1',
