@@ -1,6 +1,6 @@
 {
   "name": "semver-select",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Select an attribute of an object based on semver versioning",
   "main": "./lib/",
   "author": {
