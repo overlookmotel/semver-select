@@ -11,3 +11,4 @@
 ## Next
 
 * Update semver dependency
+* Update dev dependencies
