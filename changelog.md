@@ -8,7 +8,7 @@
 
 * README update
 
-## Next
+## 1.1.0
 
 * Update semver dependency
 * Update dev dependencies
