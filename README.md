@@ -1,5 +1,7 @@
 # semver-select.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/semver-select.svg)](https://greenkeeper.io/)
+
 # Select an attribute of an object based on semver versioning
 
 ## Current status
